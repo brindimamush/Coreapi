@@ -32,6 +32,10 @@ export function MerchantTable({
       cell: (info) => <span className="font-medium">{info.getValue<string>()}</span>,
     },
     {
+      accessorKey: 'telegram_id',
+      header: 'Telegram ID',
+    },
+    {
       accessorKey: 'business_email',
       header: 'Email',
     },
