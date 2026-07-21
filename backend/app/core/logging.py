@@ -3,7 +3,7 @@ import sys
 from datetime import datetime, timezone
 from logging.handlers import RotatingFileHandler
 import json
-from config import settings
+from app.core.config import settings
 
 class JsonFormatter(logging.Formatter):
     def format(self, record):

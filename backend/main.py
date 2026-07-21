@@ -7,6 +7,7 @@ from app.core.exceptions import add_exception_handlers
 from app.middleware.request_id import RequestIDMiddleware
 from app.middleware.timing import TimingMiddleware
 from app.api.v1 import health
+from app.api.v1.internal import merchants as internal_merchants
 
 setup_logging()
 
@@ -37,3 +38,4 @@ add_exception_handlers(app)
 
 # Include routers
 app.include_router(health.router, prefix="/api/v1", tags=["health"])
+app.include_router(internal_merchants.router, prefix="/api/v1/internal/merchants", tags=["internal"])

@@ -26,6 +26,8 @@ class Settings(BaseSettings):
     # Logging
     LOG_LEVEL: str = "INFO"
 
+    INTERNAL_API_KEY: str = "dev-internal-key" # Change in production
+
     class Config:
         env_file = ".env"
         case_sensitive = True
