@@ -9,7 +9,7 @@ from app.database.base import Base
 # Make sure your models are imported here so Alembic detects their tables
 from app.models.merchant import Merchant  # noqa: F401
 from app.models.audit_log import AuditLog  # noqa: F401
-
+from app.models.subscription_plan import SubscriptionPlan
 config = context.config
 config.set_main_option("sqlalchemy.url", settings.DATABASE_URL)
 

@@ -8,6 +8,8 @@ from app.middleware.request_id import RequestIDMiddleware
 from app.middleware.timing import TimingMiddleware
 from app.api.v1 import health
 from app.api.v1.internal import merchants as internal_merchants
+from app.api.v1 import subscription_plans
+from app.api.v1.admin import subscription_plans as admin_plans
 
 setup_logging()
 
@@ -39,3 +41,5 @@ add_exception_handlers(app)
 # Include routers
 app.include_router(health.router, prefix="/api/v1", tags=["health"])
 app.include_router(internal_merchants.router, prefix="/api/v1/internal/merchants", tags=["internal"])
+app.include_router(subscription_plans.router, prefix="/api/v1/subscription-plans", tags=["merchant-plans"])
+app.include_router(admin_plans.router, prefix="/api/v1/admin/subscription-plans", tags=["admin-plans"])
