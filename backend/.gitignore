@@ -1,0 +1,80 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+ENV/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Environment variables and secrets
+.env
+.env.[a-zA-Z]*
+!.env.example
+.secrets
+*.pem
+*.key
+
+# Inline databases & SQLite (if used for local testing)
+*.db
+*.sqlite
+*.sqlite3
+
+# Redis / Celery (dump files if run locally without Docker volumes)
+*.rdb
+
+# Testing and coverage
+htmlcov/
+.toast/
+.hypothesis/
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+*.py,cover
+nosetests.xml
+pylintdump.md
+.mutations/
+
+# Linting, formatting, and type-checking
+.black
+.ruff_cache/
+.mypy_cache/
+.pyre/
+.pytype/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
